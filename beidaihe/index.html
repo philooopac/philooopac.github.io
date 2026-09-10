@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北戴河蔚蓝海岸-滨海度假社区游玩与居住指南</title>
+<meta name="description" content="北戴河蔚蓝海岸信息指南：了解这片滨海度假社区的位置环境、沙滩与海边活动、住宿选择、亲子游玩方式、出行季节与注意事项，帮助你规划一次舒适的海边假期。">
+<meta name="keywords" content="北戴河蔚蓝海岸,北戴河海边度假,蔚蓝海岸沙滩,北戴河亲子游玩,北戴河住宿攻略,秦皇岛滨海旅游">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --sea-deep:#0b3d5c;
+    --sea-mid:#12708f;
+    --sea-light:#3fa9c4;
+    --sand:#f3e6cf;
+    --sand-deep:#e2cfa9;
+    --sky:#eaf6fa;
+    --ink:#1d2b33;
+    --ink-soft:#4a5d68;
+    --white:#ffffff;
+    --line:rgba(11,61,92,.12);
+    --radius:14px;
+    --shadow:0 10px 28px rgba(11,61,92,.10);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+    color:var(--ink);
+    background:var(--sky);
+    line-height:1.75;
+    font-size:16px;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  h1,h2,h3{line-height:1.35;margin:0 0 .6em;}
+  p{margin:0 0 1em;}
+  .wrap{
+    width:min(1160px,92%);
+    margin:0 auto;
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  .site-header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+    padding:12px 0;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    font-size:1.12rem;
+    color:var(--sea-deep);
+    letter-spacing:.5px;
+  }
+  .brand-mark{
+    width:38px;height:38px;
+    border-radius:50%;
+    background:linear-gradient(140deg,var(--sea-light),var(--sea-deep));
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:.78rem;font-weight:700;
+    flex:0 0 auto;
+  }
+  .brand small{
+    display:block;
+    font-weight:400;
+    font-size:.72rem;
+    color:var(--ink-soft);
+    letter-spacing:1px;
+  }
+  .main-nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 20px;
+    font-size:.95rem;
+  }
+  .main-nav a{
+    color:var(--ink-soft);
+    padding:4px 0;
+    border-bottom:2px solid transparent;
+    transition:.2s;
+  }
+  .main-nav a:hover{
+    color:var(--sea-mid);
+    border-bottom-color:var(--sea-light);
+  }
+  .nav-toggle{
+    display:none;
+    background:none;border:1px solid var(--line);
+    border-radius:8px;padding:6px 10px;font-size:1rem;color:var(--sea-deep);
+    cursor:pointer;
+  }
+
+  /* ---------- 首屏 ---------- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(1200px 420px at 78% -10%, rgba(63,169,196,.55), transparent 70%),
+      linear-gradient(180deg,#0b3d5c 0%,#12708f 58%,#3fa9c4 100%);
+    color:#fff;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    left:0;right:0;bottom:-1px;
+    height:70px;
+    background:var(--sky);
+    clip-path:polygon(0 100%,0 42%,12% 58%,26% 30%,40% 62%,55% 34%,70% 60%,84% 32%,100% 55%,100% 100%);
+    opacity:.9;
+  }
+  .hero-inner{
+    position:relative;
+    z-index:2;
+    padding:64px 0 96px;
+    display:grid;
+    grid-template-columns:1.25fr .95fr;
+    gap:44px;
+    align-items:center;
+  }
+  .hero-tag{
+    display:inline-block;
+    font-size:.8rem;
+    letter-spacing:2px;
+    padding:5px 14px;
+    border:1px solid rgba(255,255,255,.5);
+    border-radius:999px;
+    margin-bottom:18px;
+    color:#eaf6fa;
+  }
+  .hero h1{
+    font-size:clamp(1.8rem,3.6vw,2.7rem);
+    margin-bottom:16px;
+    letter-spacing:1px;
+  }
+  .hero p.lead{
+    font-size:1.03rem;
+    color:#e3f3f8;
+    max-width:34em;
+  }
+  .hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:24px;
+  }
+  .btn{
+    display:inline-block;
+    padding:11px 24px;
+    border-radius:999px;
+    font-size:.95rem;
+    font-weight:600;
+    transition:.22s;
+    border:1px solid transparent;
+    cursor:pointer;
+  }
+  .btn-primary{
+    background:#ffd27a;
+    color:#5a3d05;
+  }
+  .btn-primary:hover{background:#ffc44f;transform:translateY(-2px);}
+  .btn-ghost{
+    border-color:rgba(255,255,255,.65);
+    color:#fff;
+  }
+  .btn-ghost:hover{background:rgba(255,255,255,.14);}
+
+  .hero-panel{
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:var(--radius);
+    padding:22px 22px 18px;
+    backdrop-filter:blur(6px);
+  }
+  .hero-panel h2{
+    font-size:1.02rem;
+    margin-bottom:14px;
+    color:#fff;
+    letter-spacing:1px;
+  }
+  .hero-facts{
+    list-style:none;
+    margin:0;padding:0;
+    font-size:.92rem;
+    color:#eaf6fa;
+  }
+  .hero-facts li{
+    display:flex;
+    gap:10px;
+    padding:9px 0;
+    border-bottom:1px dashed rgba(255,255,255,.25);
+  }
+  .hero-facts li:last-child{border-bottom:none;}
+  .hero-facts span.k{
+    flex:0 0 74px;
+    color:#ffd27a;
+    font-weight:600;
+  }
+
+  /* ---------- 通用区块 ---------- */
+  section{padding:62px 0;}
+  .section-head{
+    max-width:760px;
+    margin-bottom:34px;
+  }
+  .section-head .eyebrow{
+    font-size:.78rem;
+    letter-spacing:3px;
+    color:var(--sea-mid);
+    font-weight:700;
+    text-transform:uppercase;
+  }
+  .section-head h2{
+    font-size:clamp(1.35rem,2.4vw,1.85rem);
+    margin-top:8px;
+    color:var(--sea-deep);
+  }
+  .section-head p{
+    color:var(--ink-soft);
+    margin-bottom:0;
+  }
+
+  /* ---------- 亮点卡片 ---------- */
+  .highlight-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+  }
+  .hl-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px 22px;
+    box-shadow:var(--shadow);
+    transition:.25s;
+  }
+  .hl-card:hover{transform:translateY(-4px);}
+  .hl-icon{
+    width:44px;height:44px;
+    border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.2rem;
+    background:linear-gradient(140deg,#d9eff6,#a9dbe8);
+    color:var(--sea-deep);
+    margin-bottom:14px;
+  }
+  .hl-card h3{
+    font-size:1.05rem;
+    color:var(--sea-deep);
+    margin-bottom:8px;
+  }
+  .hl-card p{
+    font-size:.92rem;
+    color:var(--ink-soft);
+    margin-bottom:0;
+  }
+
+  /* ---------- 游玩方式 ---------- */
+  .play-section{
+    background:linear-gradient(180deg,#ffffff, #f4fbfd);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .play-list{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+  }
+  .play-item{
+    background:var(--white);
+    border-radius:var(--radius);
+    border:1px solid var(--line);
+    padding:0 0 20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .play-band{
+    height:8px;
+    background:linear-gradient(90deg,var(--sea-light),var(--sand-deep));
+  }
+  .play-body{padding:20px 22px 0;}
+  .play-item h3{
+    font-size:1.05rem;
+    color:var(--sea-deep);
+  }
+  .play-item p{
+    font-size:.92rem;
+    color:var(--ink-soft);
+  }
+  .play-item ul{
+    margin:0;
+    padding-left:18px;
+    font-size:.9rem;
+    color:var(--ink-soft);
+  }
+  .play-item li{margin-bottom:6px;}
+
+  /* ---------- 时间与季节 ---------- */
+  .season-wrap{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:36px;
+    align-items:start;
+  }
+  .season-table{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--white);
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    font-size:.92rem;
+  }
+  .season-table th,
+  .season-table td{
+    padding:13px 16px;
+    text-align:left;
+    border-bottom:1px solid var(--line);
+  }
+  .season-table th{
+    background:var(--sea-deep);
+    color:#fff;
+    font-weight:600;
+    letter-spacing:.5px;
+  }
+  .season-table tr:last-child td{border-bottom:none;}
+  .season-table td:first-child{
+    font-weight:600;
+    color:var(--sea-mid);
+    white-space:nowrap;
+  }
+  .season-note{
+    background:var(--white);
+    border-left:4px solid var(--sea-light);
+    border-radius:0 var(--radius) var(--radius) 0;
+    padding:20px 22px;
+    box-shadow:var(--shadow);
+  }
+  .season-note h3{
+    font-size:1.02rem;
+    color:var(--sea-deep);
+  }
+  .season-note p{font-size:.92rem;color:var(--ink-soft);}
+  .season-note p:last-child{margin-bottom:0;}
+
+  /* ---------- 住宿与出行 ---------- */
+  .stay-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+  }
+  .stay-card{
+    background:var(--white);
+    border-radius:var(--radius);
+    border:1px solid var(--line);
+    padding:24px 24px 18px;
+    box-shadow:var(--shadow);
+  }
+  .stay-card h3{
+    font-size:1.06rem;
+    color:var(--sea-deep);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .stay-card h3::before{
+    content:"";
+    width:10px;height:10px;
+    border-radius:50%;
+    background:var(--sea-light);
+    flex:0 0 auto;
+  }
+  .stay-card p,
+  .stay-card li{
+    font-size:.92rem;
+    color:var(--ink-soft);
+  }
+  .stay-card ul{margin:0 0 6px;padding-left:18px;}
+
+  /* ---------- 出行提示 ---------- */
+  .tips-section{
+    background:var(--sea-deep);
+    color:#e9f5f9;
+  }
+  .tips-section .section-head h2{color:#fff;}
+  .tips-section .section-head p{color:#bcd9e4;}
+  .tips-section .eyebrow{color:#ffd27a;}
+  .tips-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+  }
+  .tip-card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:var(--radius);
+    padding:22px;
+  }
+  .tip-card h3{
+    font-size:1rem;
+    color:#ffd27a;
+    margin-bottom:10px;
+  }
+  .tip-card p,
+  .tip-card li{
+    font-size:.9rem;
+    color:#d7e9f0;
+  }
+  .tip-card ul{margin:0;padding-left:18px;}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{
+    display:grid;
+    gap:14px;
+  }
+  details.faq{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:0 22px;
+    box-shadow:var(--shadow);
+  }
+  details.faq summary{
+    cursor:pointer;
+    list-style:none;
+    padding:18px 0;
+    font-weight:600;
+    color:var(--sea-deep);
+    font-size:1rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+  }
+  details.faq summary::-webkit-details-marker{display:none;}
+  details.faq summary::after{
+    content:"+";
+    font-size:1.3rem;
+    color:var(--sea-light);
+    flex:0 0 auto;
+    transition:.2s;
+  }
+  details.faq[open] summary::after{
+    content:"–";
+  }
+  details.faq .faq-body{
+    padding:0 0 20px;
+    font-size:.93rem;
+    color:var(--ink-soft);
+    border-top:1px dashed var(--line);
+    padding-top:14px;
+  }
+  details.faq .faq-body p:last-child{margin-bottom:0;}
+
+  /* ---------- 页脚 ---------- */
+  .site-footer{
+    background:#082c42;
+    color:#a9c6d4;
+    padding:48px 0 26px;
+    font-size:.9rem;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:32px;
+    padding-bottom:28px;
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+  .footer-grid h3{
+    color:#fff;
+    font-size:.98rem;
+    margin-bottom:14px;
+    letter-spacing:1px;
+  }
+  .footer-grid p{color:#9dbfcd;}
+  .footer-grid ul{
+    list-style:none;
+    margin:0;padding:0;
+  }
+  .footer-grid li{margin-bottom:9px;}
+  .footer-grid a:hover{color:#ffd27a;}
+  .footer-bottom{
+    padding-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:10px;
+    color:#7fa3b3;
+    font-size:.82rem;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:1000px){
+    .hero-inner{grid-template-columns:1fr;gap:32px;padding:52px 0 88px;}
+    .highlight-grid{grid-template-columns:repeat(2,1fr);}
+    .play-list{grid-template-columns:1fr 1fr;}
+    .tips-grid{grid-template-columns:1fr 1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:760px){
+    .nav-toggle{display:block;}
+    .main-nav{
+      display:none;
+      width:100%;
+      flex-direction:column;
+      gap:2px;
+      padding:10px 0 6px;
+      border-top:1px solid var(--line);
+    }
+    .main-nav.open{display:flex;}
+    .header-inner{flex-wrap:wrap;}
+    .season-wrap{grid-template-columns:1fr;}
+    .stay-grid{grid-template-columns:1fr;}
+    .highlight-grid{grid-template-columns:1fr;}
+    .play-list{grid-template-columns:1fr;}
+    .tips-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;}
+    section{padding:48px 0;}
+    .hero-inner{padding:44px 0 78px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">蔚蓝</span>
+      <span>北戴河蔚蓝海岸
+        <small>滨海度假社区指南</small>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="展开导航">☰ 导航</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#intro">区域概览</a>
+      <a href="#highlights">环境亮点</a>
+      <a href="#play">海边玩法</a>
+      <a href="#season">季节参考</a>
+      <a href="#stay">住宿出行</a>
+      <a href="#tips">实用提示</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="hero-tag">秦皇岛 · 北戴河新区</span>
+        <h1>北戴河蔚蓝海岸：一片适合慢下来的海边生活区</h1>
+        <p class="lead">如果你在搜索“北戴河蔚蓝海岸”，多半是想知道它到底是一片什么样的海滩、适合什么样的假期、怎么安排行程和住宿。这里从环境、玩法、季节和出行准备几个角度，把关键信息梳理清楚，方便你在出发前做出判断。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#intro">先看区域概览</a>
+          <a class="btn btn-ghost" href="#play">查看海边玩法</a>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <h2>快速了解</h2>
+        <ul class="hero-facts">
+          <li><span class="k">所在位置</span><span>河北省秦皇岛市北戴河新区一带的滨海片区</span></li>
+          <li><span class="k">主要特色</span><span>沙滩、海景步道与成片的度假居住区</span></li>
+          <li><span class="k">适合人群</span><span>亲子家庭、情侣、短途周末出游者</span></li>
+          <li><span class="k">建议时长</span><span>1—3 天，节奏可快可慢</span></li>
+          <li><span class="k">出行方式</span><span>自驾较为灵活，也可乘高铁到秦皇岛后转乘</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 区域概览 -->
+  <section id="intro">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Overview</span>
+        <h2>蔚蓝海岸是一片怎样的海边区域</h2>
+        <p>它不是单一景点，而是一个以海岸线为依托、融合了沙滩、绿地与居住度假功能的滨海片区。理解这一点，能帮你更合理地安排行程。</p>
+      </div>
+      <p>北戴河蔚蓝海岸通常指位于秦皇岛北戴河新区沿海一带的度假型区域。与传统的“打卡式”景点不同，这里的核心体验围绕海岸展开：开阔的沙滩、成排的绿植、沿海的步道，以及分布其间的住宅与度假配套。很多人来这里并不是为了赶场看景点，而是为了在海边住上几天，早晚散步、白天戏水、傍晚看日落。</p>
+      <p>从功能上看，这片区域大致可以分为几类空间：一是直接临海的沙滩与亲水区域，适合玩沙、踏浪和看海；二是沿海的景观步道与绿化带，适合散步、骑行和拍照；三是内部的居住与商业配套区域，承担住宿、餐饮和日常补给的功能。不同区域的开放程度、人流密度和管理方式可能随季节调整，实际以现场指引为准。</p>
+      <p>需要提醒的是，北戴河一带的旅游有比较明显的季节性。夏季是传统旺季，海边活动丰富、人气旺盛；而春秋两季则更适合安静地看海、散步，气温舒适但下水体验会打折扣。冬季海风较大，适合喜欢清冷海景和摄影的人，但要注意保暖。</p>
+    </div>
+  </section>
+
+  <!-- 环境亮点 -->
+  <section id="highlights" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Highlights</span>
+        <h2>吸引人前来的几个环境特点</h2>
+        <p>以下是比较常被提到的体验方向，具体感受会因季节、天气和个人偏好而不同。</p>
+      </div>
+      <div class="highlight-grid">
+        <article class="hl-card">
+          <div class="hl-icon">🌊</div>
+          <h3>开阔的海岸视野</h3>
+          <p>临海一侧视野较为通透，天气晴朗时可以看到较远的海平线，适合看日出日落和海景摄影。</p>
+        </article>
+        <article class="hl-card">
+          <div class="hl-icon">🏖️</div>
+          <h3>平缓的沙滩</h3>
+          <p>沙滩区域相对平缓，适合带孩子玩沙、堆沙堡，也方便一家人沿着水线慢慢走。</p>
+        </article>
+        <article class="hl-card">
+          <div class="hl-icon">🌿</div>
+          <h3>绿化与步道</h3>
+          <p>区域内分布着成片的绿化和景观步道，海边走累了可以转入林荫路段，节奏更从容。</p>
+        </article>
+        <article class="hl-card">
+          <div class="hl-icon">🏡</div>
+          <h3>度假式居住氛围</h3>
+          <p>以居住和度假功能为主，整体氛围偏安静，适合想“住下来慢慢过几天”的旅行方式。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 海边玩法 -->
+  <section id="play" class="play-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Things to Do</span>
+        <h2>到了海边可以做些什么</h2>
+        <p>海边度假不必安排得太满，按自己的节奏组合下面这些活动就很舒服。</p>
+      </div>
+      <div class="play-list">
+        <article class="play-item">
+          <div class="play-band"></div>
+          <div class="play-body">
+            <h3>亲水与沙滩活动</h3>
+            <p>最直接的海边体验，适合天气暖和的时段。</p>
+            <ul>
+              <li>清晨或傍晚沿海岸线散步、踩水</li>
+              <li>带孩子玩沙、捡贝壳、堆沙堡</li>
+              <li>在允许的区域游泳，注意看现场安全提示</li>
+            </ul>
+          </div>
+        </article>
+        <article class="play-item">
+          <div class="play-band"></div>
+          <div class="play-body">
+            <h3>骑行与慢行</h3>
+            <p>沿海道路和步道适合用较慢的速度感受风景。</p>
+            <ul>
+              <li>沿景观道骑行，随时停下看海</li>
+              <li>步行探索绿化带与观景节点</li>
+              <li>带上相机记录日出与晚霞</li>
+            </ul>
+          </div>
+        </article>
+        <article class="play-item">
+          <div class="play-band"></div>
+          <div class="play-body">
+            <h3>亲子与休闲时光</h3>
+            <p>适合一家人把节奏放慢，各取所需。</p>
+            <ul>
+              <li>上午海边活动，中午回住处休息避晒</li>
+              <li>下午在阴凉处阅读、聊天、看海</li>
+              <li>傍晚一起看日落，安排一顿海鲜晚餐</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 季节参考 -->
+  <section id="season">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Seasons</span>
+        <h2>不同季节的体验差异</h2>
+        <p>海边体验受气温、风力和人流影响很大，选对时间比赶行程更重要。下表为一般性参考，实际天气请以出行前预报为准。</p>
+      </div>
+      <div class="season-wrap">
+        <table class="season-table">
+          <thead>
+            <tr>
+              <th>时段</th>
+              <th>大致特点</th>
+              <th>适合的活动</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>春末至初夏</td>
+              <td>气温回升，人流相对温和，海水仍偏凉</td>
+              <td>散步、骑行、看海、摄影</td>
+            </tr>
+            <tr>
+              <td>盛夏</td>
+              <td>传统旺季，海边活动丰富，人流集中</td>
+              <td>戏水、玩沙、亲子出游</td>
+            </tr>
+            <tr>
+              <td>秋季</td>
+              <td>天气转凉，海景通透，节奏安静</td>
+              <td>慢行、看日出日落、短住</td>
+            </tr>
+            <tr>
+              <td>冬季</td>
+              <td>海风较强，气温低，景色清冷</td>
+              <td>观海、摄影，需重视保暖</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="season-note">
+          <h3>怎么选时间更合适</h3>
+          <p>如果主要目的是下水玩沙，一般会集中在夏季；如果更在意安静和舒适的气温，春末和秋季往往体验更好。旺季出行建议提前规划住宿和交通，并预留出应对人流的时间。</p>
+          <p>海边天气变化较快，出发前几天再确认一次气温、风力和降雨情况，会比提前很久定计划更稳妥。遇到大风或雷雨天气，应减少海边停留时间。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 住宿与出行 -->
+  <section id="stay" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Stay &amp; Travel</span>
+        <h2>住宿与到达方式的基本思路</h2>
+        <p>这一带以度假居住功能为主，住宿选择相对多样，具体房源和价格会随季节浮动，建议通过正规平台核实后再预订。</p>
+      </div>
+      <div class="stay-grid">
+        <article class="stay-card">
+          <h3>住宿怎么选</h3>
+          <ul>
+            <li>靠近海边的住处步行到沙滩更方便，旺季通常更抢手。</li>
+            <li>带孩子的家庭可优先考虑有厨房或亲子设施的房源，方便安排饮食和作息。</li>
+            <li>如果更看重安静，可适当选择离核心人流区稍远的住处。</li>
+            <li>预订前确认是否含停车位、是否可做饭、退改规则等细节。</li>
+          </ul>
+        </article>
+        <article class="stay-card">
+          <h3>怎么到达</h3>
+          <ul>
+            <li>自驾相对灵活，适合携带行李和带孩子出行，注意旺季停车安排。</li>
+            <li>可乘高铁到秦皇岛站等站点，再换乘出租车或公共交通前往。</li>
+            <li>区域内部分路段适合步行或骑行，穿舒适的鞋会更轻松。</li>
+            <li>出行前查好路线和所需时间，避免夜间在不熟悉的路段赶路。</li>
+          </ul>
+        </article>
+        <article class="stay-card">
+          <h3>吃与日常补给</h3>
+          <ul>
+            <li>海鲜是当地常见选择，注意选择正规餐饮场所并确认价格。</li>
+            <li>旺季用餐高峰排队较多，可错峰安排。</li>
+            <li>带孩子的家庭可自备一些常用食品和饮用水。</li>
+            <li>对海鲜过敏者需提前说明，避免误食。</li>
+          </ul>
+        </article>
+        <article class="stay-card">
+          <h3>行程安排建议</h3>
+          <ul>
+            <li>第一天以适应和海边散步为主，不必安排太满。</li>
+            <li>第二天可安排较完整的海边活动，避开正午强晒时段。</li>
+            <li>最后半天留给休闲和返程准备，减少匆忙感。</li>
+            <li>把看日出或日落单独留出时间，体验会更好。</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 实用提示 -->
+  <section id="tips" class="tips-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Practical Tips</span>
+        <h2>出发前值得留意的几件事</h2>
+        <p>海边环境有其特殊性，提前准备能避免不少麻烦。</p>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <h3>防晒与防护</h3>
+          <ul>
+            <li>海边紫外线较强，备好防晒霜、帽子、太阳镜。</li>
+            <li>正午时段尽量减少长时间暴晒。</li>
+            <li>给孩子穿防晒衣，及时补水。</li>
+          </ul>
+        </div>
+        <div class="tip-card">
+          <h3>安全事项</h3>
+          <ul>
+            <li>只在允许游泳的区域下水，留意现场警示。</li>
+            <li>不熟悉水性者避免独自远离岸边。</li>
+            <li>看护好随行儿童，不让孩子单独靠近水边。</li>
+          </ul>
+        </div>
+        <div class="tip-card">
+          <h3>物品准备</h3>
+          <ul>
+            <li>沙滩鞋、替换衣物、毛巾和防水袋很实用。</li>
+            <li>随身带少量现金以备不时之需。</li>
+            <li>手机防水套和充电宝可提升便利性。</li>
+          </ul>
+        </div>
+        <div class="tip-card">
+          <h3>环保与礼仪</h3>
+          <ul>
+            <li>垃圾随身带走或投入指定垃圾桶。</li>
+            <li>不随意捕捉海洋生物、不破坏沙丘植被。</li>
+            <li>在公共区域控制音量，尊重他人休息。</li>
+          </ul>
+        </div>
+        <div class="tip-card">
+          <h3>天气应对</h3>
+          <ul>
+            <li>出发前查看风力与降雨预报。</li>
+            <li>大风、雷雨天气避免在海边长时间停留。</li>
+            <li>早晚温差可能明显，备一件外套。</li>
+          </ul>
+        </div>
+        <div class="tip-card">
+          <h3>信息核实</h3>
+          <ul>
+            <li>开放区域和管理规定可能随季节调整。</li>
+            <li>以现场公告和官方渠道信息为准。</li>
+            <li>预订前确认房源与服务的真实情况。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>常见问题</h2>
+        <p>整理了一些搜索中经常出现的问题，供出行前参考。</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq" open>
+          <summary>北戴河蔚蓝海岸是景点还是居住区？</summary>
+          <div class="faq-body">
+            <p>它更接近一个以海岸为依托的滨海度假片区，包含沙滩、景观步道和居住度假配套，而不是单一收门票的传统景点。因此游玩方式更偏向“住下来、慢慢逛”，而不是按固定路线打卡。</p>
+          </div>
+        </details>
+        <details class="faq">
+          <summary>适合带孩子去吗？</summary>
+          <div class="faq-body">
+            <p>整体比较适合亲子出行。沙滩平缓、活动强度可控，孩子可以玩沙、踩水。但海边安全需要家长全程看护，注意防晒、补水和避开正午强晒时段。</p>
+          </div>
+        </details>
+        <details class="faq">
+          <summary>什么时间去比较好？</summary>
+          <div class="faq-body">
+            <p>想下水玩沙一般选夏季，想安静舒适则春末和秋季更合适。旺季人多、住宿紧张，建议提前安排；同时出发前确认天气和风力情况。</p>
+          </div>
+        </details>
+        <details class="faq">
+          <summary>需要提前订住宿吗？</summary>
+          <div class="faq-body">
+            <p>旺季和节假日建议提前预订，选择会更多，也便于比较位置和条件。预订时留意退改规则、停车安排和实际到海边的距离。</p>
+          </div>
+        </details>
+        <details class="faq">
+          <summary>不会游泳能去海边玩吗？</summary>
+          <div class="faq-body">
+            <p>可以。很多海边体验并不需要游泳，比如散步、玩沙、看日落和拍照。但无论是否会游泳，都应在允许区域内活动，并留意现场安全提示。</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>北戴河蔚蓝海岸</h3>
+        <p>一个围绕滨海度假场景整理的信息型页面，帮助你在出行前了解这片区域的整体特点、游玩方式与准备事项。</p>
+      </div>
+      <div>
+        <h3>页面导航</h3>
+        <ul>
+          <li><a href="#intro">区域概览</a></li>
+          <li><a href="#highlights">环境亮点</a></li>
+          <li><a href="#play">海边玩法</a></li>
+          <li><a href="#season">季节参考</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>实用信息</h3>
+        <ul>
+          <li><a href="#stay">住宿与出行</a></li>
+          <li><a href="#tips">实用提示</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>内容为一般性出行参考，实际情况请以现场公告与官方信息为准。</span>
+      <span>海边出行请注意安全与环保。</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var toggle = document.getElementById('navToggle');
+    var nav = document.getElementById('mainNav');
+    if(toggle && nav){
+      toggle.addEventListener('click', function(){
+        nav.classList.toggle('open');
+      });
+      nav.addEventListener('click', function(e){
+        if(e.target.tagName === 'A' && window.innerWidth <= 760){
+          nav.classList.remove('open');
+        }
+      });
+    }
+  })();
+</script>
+
+</body>
+    </html>
